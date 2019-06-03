@@ -17,8 +17,8 @@ Procedure-
 Commands-
 1. ping [usage: (prefix)ping ]
 2. about [usage: (prefix)about ]
-3. say [usage: say "text" ]
-4. clear [usage: clear "amount" ]
-5. 8ball [usage: 8ball "question" ]
+3. say [usage: (prefix)say "text" ]
+4. clear [usage: (prefix)clear "amount" ]
+5. 8ball [usage: (prefix)8ball "question" ]
 
 More Features Soon! :D
