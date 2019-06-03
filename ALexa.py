@@ -43,7 +43,7 @@ async def on_member_remove(member):
 
 @client.command()
 async def ping(ctx):
-    await ctx.send(f'Pong! {round(client.latency * 1000)}ms')
+    await ctx.send(f'Voila!! {round(client.latency * 1000)}ms')
 
 @client.command(aliases=['8ball'])
 async def _8ball(ctx, *, question):
@@ -67,7 +67,7 @@ async def _8ball(ctx, *, question):
                  'My sources say no.',
                  'Outlook not so good.',
                  'Very doubtful.']
-    await ctx.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
+    await ctx.send(f'{random.choice(responses)}')
 
 @client.command()
 async def clear(ctx, amount=5):
@@ -82,16 +82,6 @@ async def about(ctx):
 @commands.has_role('YOUR_ADMIN_ROLE')
 async def say(ctx, arg):
     await ctx.send(arg)
-
-@client.command()
-@commands.has_role('YOUR_ADMIN_ROLE')
-async def kick(ctx, member : discord.Member, *, reason=None):
-    await member.kick(reason=reason)
-
-@client.command()
-@commands.has_role('YOUR_ADMIN_ROLE')
-async def ban(ctx, member : discord.Member, *, reason=None):
-    await member.ban(reason=reason)
 
 
 # Auth Key
