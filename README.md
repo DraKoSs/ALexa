@@ -19,6 +19,6 @@ Commands-
 2. about [usage: (prefix)about ]
 3. say [usage: say "text" ]
 4. clear [usage: clear "amount" ]
-5. 8ball! [usage: 8ball "question" ]
+5. 8ball [usage: 8ball "question" ]
 
 More Features Soon! :D
